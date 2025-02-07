@@ -71,6 +71,6 @@ The following environment variables are required:
 - `WALLET_PRIVATE_KEY`: Your Ethereum wallet private key
 - `INFURA_URL`: Your Infura project URL
 - `ETH_AMOUNT`: Amount of ETH to send per request
-- `RATE_LIMIT`: Rate limit for requests (e.g., "5/h" for 5 requests per hour)
+- `RATE_LIMIT`: Rate limit for requests (e.g., "5" for 5 requests per minute)
 - `DJANGO_SECRET_KEY`: Django secret key for security
 - `DEBUG`: Set to True for development, False for production
