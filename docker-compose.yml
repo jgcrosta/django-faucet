@@ -1,0 +1,16 @@
+version: "3"
+
+services:
+  web:
+    build: .
+    ports:
+      - "8000:8000"
+    environment:
+      - WALLET_PRIVATE_KEY=${WALLET_PRIVATE_KEY}
+      - INFURA_URL=${INFURA_URL}
+      - ETH_AMOUNT=${ETH_AMOUNT}
+      - RATE_LIMIT=${RATE_LIMIT}
+      - DJANGO_SECRET_KEY=${DJANGO_SECRET_KEY}
+      - DEBUG=False
+    volumes:
+      - .:/app
